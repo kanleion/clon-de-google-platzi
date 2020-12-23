@@ -1,8 +1,15 @@
+/*VARIABLES INICIALES*/
+
 :root {
     --primary-color: #b4b4b4;
     --font-family: 'Open Sans', sans-serif;
-    --font-size: 1.6rem;
+    --font-size-title: 1.6rem;
     --font-weight: 400;
+    --font-size-p-tag: 1.4rem;
+    --font-color: #616161;
+    --font-color-hover: black;
+    --footer-background-color: #b4b4b42e;
+    --footer-border: 1px solid #b4b4b421;
 }
 
 * {
@@ -13,4 +20,117 @@
 
 html {
     font-size: 62.5%;
+}
+
+
+/*ENCABEZADO*/
+
+.header-nav {
+    width: 100vw;
+}
+
+.header-nav .header-nav_menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.header-nav_menu li {
+    font-size: var(--font-size-p-tag);
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    padding: 1.6rem;
+    list-style: none;
+}
+
+.header-nav_menu li a {
+    text-decoration: none;
+    color: lightslategray;
+}
+
+.header-nav_menu li a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+
+/*MAIN*/
+
+main section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 100vw;
+}
+
+
+/*FOOTER*/
+
+footer {
+    width: 100vw;
+}
+
+footer .footer-section_one,
+.footer-section_two,
+.footer-section_three,
+.footer-section_two_bloc1,
+.footer-section_two_bloc2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer section ul li a {
+    text-decoration: none;
+}
+
+footer section ul li {
+    list-style: none;
+}
+
+.footer-section_one {
+    width: 100vw;
+    height: 50px;
+    background-color: var(--footer-background-color);
+    border: var(--footer-border);
+}
+
+.footer-section_one p {
+    font-family: var(--font-family);
+    font-size: var(--font-size-p-tag);
+    font-weight: var(--font-weight);
+    color: var(--font-color);
+    padding: 1.6rem;
+}
+
+.footer-section_one p:hover {
+    color: var(--font-color-hover);
+    text-decoration: underline;
+}
+
+.footer-section_two {
+    width: 100vw;
+}
+
+.footer-section_two ul li {
+    font-family: var(--font-family);
+    font-size: var(--font-size-p-tag);
+    font-weight: var(--font-weight);
+    padding: 1.6rem;
+}
+
+.footer-section_two ul li a {
+    color: var(--font-color);
+}
+
+.footer-section_two ul li a:hover {
+    color: var(--font-color-hover);
+}
+
+.footer-section_two_bloc1,
+.footer-section_two_bloc2 {
+    width: 50vw;
+    background-color: var(--footer-background-color);
+    border: var(--footer-border);
 }
